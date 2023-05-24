@@ -16,9 +16,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 2: Introdução à HTML & CSS
 
-- [ ] Dia 1: _HTML & css: Estruturas de página_
-- [ ] Dia 2: _HTML & css: Primeiros passos em CSS_
-- [ ] Dia 3: _HTML & css: Seletores e posicionamento_
+- [ ] Dia 1: _HTML & CSS: Estruturas de página_
+- [ ] Dia 2: _HTML & CSS: Primeiros passos em CSS_
+- [ ] Dia 3: _HTML & CSS: Seletores e posicionamento_
 - [ ] Dia 4: _HTML Semântico_
 - [ ] Dia 5: _Projeto - Lessons Learned_
 
