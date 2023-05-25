@@ -12,19 +12,36 @@
 
         p{
             font-weight: 600;
+            font-size: 3em;
+            text-decoration: line-through;
         }
         body {
             font-size: 16px;
+            font-style: italic;
+            text-align: center;
+            background-color: rgb(156, 156, 116);
+        }
+        .lista {
+            line-height: 60px;
+        }
+        #cor01 {
+            background-color: yellow;
+        }
+        #cor02 {
+            background-color: red;
+        }
+        #cor03 {
+            background-color: brown;
         }
     </style>
   </head>
   <body>
     <h1>Cores</h1>
     <p>Qual é a sua cor favorita?</p>
-    <ul>
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+    <ul class="lista">
+      <li id="cor01">Amarelo</li>
+      <li id="cor02">Vermelho</li>
+      <li id="cor03">Marrom</li>
     </ul>
   </body>
 </html>
