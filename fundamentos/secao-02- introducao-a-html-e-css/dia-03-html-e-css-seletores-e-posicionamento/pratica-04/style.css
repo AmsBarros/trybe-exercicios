@@ -7,17 +7,17 @@ div:nth-of-type(1) {
 }
 
 div:nth-of-type(2) {
-
+    background-color: #3A7CA5;
 }
 
 div:nth-of-type(3) {
-    
+    background-color: #D9DCD6;
 }
 
 div:nth-of-type(4) {
-    
+    background-color: #16425B;
 }
 
 div:nth-of-type(5) {
-    
+    background-color: #81C3D7;
 }
