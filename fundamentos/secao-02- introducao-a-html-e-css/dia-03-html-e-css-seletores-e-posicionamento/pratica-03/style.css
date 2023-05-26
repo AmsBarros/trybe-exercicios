@@ -5,3 +5,6 @@ h1, p {
 li:hover {
     background-color: pink;
 }
+li:active {
+    color: red;
+}
