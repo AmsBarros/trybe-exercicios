@@ -39,6 +39,7 @@ div:nth-of-type(2) > h3 {
 div:nth-of-type(3) > h3 {
     color: brown;
     font-size: 22px;
+    font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -51,5 +52,6 @@ div:nth-of-type(4) > h3 {
 div:nth-of-type(5) > h3 {
     color: greenyellow;
     font-size: 14px;
+    font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
