@@ -27,3 +27,15 @@ li {
 li > em {
     font-weight: bold;
 }
+
+#lista-linguagens li:nth-child(-n+3){
+    color: blue;
+}
+
+.pink-java {
+    background-color: pink;
+}
+
+#list-aliados li:hover {
+    font-weight: bold;
+}
