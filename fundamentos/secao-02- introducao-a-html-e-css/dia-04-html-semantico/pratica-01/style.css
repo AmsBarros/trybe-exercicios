@@ -25,3 +25,11 @@ h1 {
     text-align: center;
     width: 300px;
   }
+
+  .premiacao {
+    text-align: center;
+  }
+
+  .prize-list li {
+    display: inline-block;
+  }
