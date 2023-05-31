@@ -1,0 +1,57 @@
+div:hover {
+    border: 2px solid black;
+}
+
+div:nth-of-type(1){
+    background-color: #2f6690;
+}
+
+div:nth-of-type(2) {
+    background-color: #3A7CA5;
+}
+
+div:nth-of-type(3) {
+    background-color: #D9DCD6;
+    height: 50px;
+}
+
+div:nth-of-type(4) {
+    background-color: #16425B;
+}
+
+div:nth-of-type(5) {
+    background-color: #81C3D7;
+}
+
+div:nth-of-type(1) > h3 {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div:nth-of-type(2) > h3 {
+    color: rgb(216, 216, 88);
+    font-size: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div:nth-of-type(3) > h3 {
+    color: brown;
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div:nth-of-type(4) > h3 {
+    color: aqua;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div:nth-of-type(5) > h3 {
+    color: greenyellow;
+    font-size: 14px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
