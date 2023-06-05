@@ -12,7 +12,7 @@ const reader = {
 };
 
 
-console.log(`O livro favorito de ${reader.name} ${reader.lastName} se chama '${Object.values(reader.favoriteBooks[0])}'.`);
+console.log(`O livro favorito de ${reader.name} ${reader.lastName} se chama '${reader.favoriteBooks[0].title}'.`);
 
 let newBook = [
     {
@@ -29,3 +29,23 @@ if (reader['favoriteBooks'].length == 1) {
 } else {
     console.log(`Julia tem ${reader['favoriteBooks'].length} livros favoritos.`)
 }
+
+/*GABARITO
+
+reader.favoriteBooks.push(
+  {
+    title: 'Harry Potter e o Prisioneiro de Azkaban',
+    author: 'JK Rowling',
+    publisher: 'Rocco',
+  },
+);
+
+console.log(reader);
+
+// Nessa solução, temos duas saídas. Se o número de livros favoritos for maior que 1, escreve "livros favoritos", no plural. Se não for maior que 1, escreve no singular: "livro favorito".
+const numFavoriteBooks = reader.favoriteBooks.length;
+
+numFavoriteBooks > 1 
+  ? console.log(`${reader.name} tem ${numFavoriteBooks} livros favoritos.`) 
+  : console.log(`${reader.name} tem ${numFavoriteBooks} livro favorito.`);
+  */
