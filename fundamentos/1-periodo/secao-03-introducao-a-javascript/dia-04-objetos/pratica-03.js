@@ -42,15 +42,15 @@ const school = {
 
   console.log(sumStudents(school));
 
-  //AINDA NÃO FUNCIONA. TERMINAR DEPOIS
   function isThere(object, key) {
     for (let index = 0; index < object.lessons.length; index += 1) {
-        if (Object.keys(object.lessons[index]) !== 'undefined') {
-            return true;
-        } else {
+        if (object.lessons[index][key] === undefined) {
             return false;
         }
     }
+    return true;
   }
 
-  console.log(isThere(school,school.lessons.professor));
+  console.log(isThere(school, 'professor'));
+
+  
