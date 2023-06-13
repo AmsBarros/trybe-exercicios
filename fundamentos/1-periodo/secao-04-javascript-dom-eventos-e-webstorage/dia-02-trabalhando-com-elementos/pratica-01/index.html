@@ -21,15 +21,19 @@
       // Primeiro passo criado
       const whereAreYou = document.getElementById('where-are-you');
       const parent = whereAreYou.parentElement;
-      parent.style.color = 'red';
+      parent.style.color = 'purple';
 
       // Segundo passo criado
       const firstChildOfChild = document.getElementById('first-child-of-child');
-      // outra opção: const firstChildOfChild = document.whereAreYou.firstChildElement;
-      firstChildOfChild.innerText = 'Testando.';
+      //outro jeito: const firstChildOfChild = whereAreYou.firstElementChild;
+      firstChildOfChild.innerText = 'Adicionando texto';
 
       // Terceiro passo criado
-      
+      const firstChild = parent.firstElementChild;
+      const firstChild2 = whereAreYou.previousElementSibling;
+      const text = whereAreYou.nextSibling;
+      const thirdChild = whereAreYou.nextElementSibling;
+      const thirdChild2 = parent.lastElementChild.previousElementSibling;
     </script>
 </body>
 </html>
