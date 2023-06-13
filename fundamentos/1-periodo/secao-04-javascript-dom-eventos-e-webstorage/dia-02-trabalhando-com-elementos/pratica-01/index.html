@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 01</title>
+</head>
+<body>
+    <main id="parent-of-parent">
+        <section id="parent">
+          <section id="first-child"></section>
+          <section id="where-are-you">
+            <section id="first-child-of-child"></section>
+          </section>
+          Attention!
+          <section id="third-child"></section>
+          <section id="fourth-and-last-child"></section>
+        </section>
+      </main>
+    <script>
+      // Primeira instrução
+      const whereAreYou = document.getElementById('where-are-you');
+      const parent = whereAreYou.parentElement;
+      parent.style.color = 'red';
+
+      // Segunda instrução
+      const firstChildOfChild = document.getElementById('first-child-of-child');
+      // outra opção: const firstChildOfChild = document.whereAreYou.firstChildElement;
+      firstChildOfChild.innerText = 'Testando.';
+    </script>
+</body>
+</html>
