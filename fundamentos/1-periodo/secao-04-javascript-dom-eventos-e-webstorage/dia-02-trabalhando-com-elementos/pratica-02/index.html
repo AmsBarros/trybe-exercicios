@@ -33,6 +33,11 @@
         const newChildOfChild = document.createElement("section");
         newChildOfChild.id = "alreadyGotLostOnNumberOfChildren";
         primeiroFilhoDoFilho.appendChild(newChildOfChild);
+
+        const thirdChild = newChildOfChild
+            .parentElement
+            .parentElement
+            .nextElementSibling;
     </script>
 </body>
 </html>
