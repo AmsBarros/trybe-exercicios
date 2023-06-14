@@ -69,6 +69,32 @@
       centerContentSection.className = "center-content";
       //document.body.querySelector('main').appendChild(centerContentSection);
       main.appendChild(centerContentSection);
+
+      const paragraph = document.createElement('p');
+      paragraph.innerText = "Compre aqui sua passagem com 99% de desconto!!!"
+      centerContentSection.appendChild(paragraph);
+      
+      const leftContentSection = document.createElement('section');
+      leftContentSection.className = "left-content";
+      main.appendChild(leftContentSection);
+
+      const rightContentSection = document.createElement('section');
+      rightContentSection.className = "right-content";
+      main.appendChild(rightContentSection);
+
+      const image = document.createElement('img');
+      image.src = "http://picsum.photos/200";
+      image.className = "small-image";
+      leftContentSection.appendChild(image);
+
+      const list = document.createElement('ul');
+      const items = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let index = 0; index < items.length; index += 1) {
+        let listItems = document.createElement('li');
+        listItems.innerText = items[index];
+        list.appendChild(listItems);
+      }
+      rightContentSection.appendChild(list);
     </script>
   </body>
 </html>
