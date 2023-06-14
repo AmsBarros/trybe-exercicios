@@ -95,6 +95,14 @@
         list.appendChild(listItems);
       }
       rightContentSection.appendChild(list);
+
+      function addTag(tag) {
+        const newTag = document.createElement(tag);
+        main.appendChild(newTag)
+      }
+      for (index = 0; index < 3; index += 1) {
+        addTag('h3');
+      }
     </script>
   </body>
 </html>
