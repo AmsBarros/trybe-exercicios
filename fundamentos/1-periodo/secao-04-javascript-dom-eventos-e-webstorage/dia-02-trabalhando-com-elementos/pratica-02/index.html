@@ -29,6 +29,10 @@
         newChild.id = 'terceiroFilhoDoFilho';
         newParent.appendChild(newChild);
 
+        const primeiroFilhoDoFilho = newParent.firstElementChild;
+        const newChildOfChild = document.createElement("section");
+        newChildOfChild.id = "alreadyGotLostOnNumberOfChildren";
+        primeiroFilhoDoFilho.appendChild(newChildOfChild);
     </script>
 </body>
 </html>
