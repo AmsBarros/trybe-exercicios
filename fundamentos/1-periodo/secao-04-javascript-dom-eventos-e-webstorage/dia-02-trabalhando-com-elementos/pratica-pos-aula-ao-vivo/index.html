@@ -59,6 +59,7 @@
     <script>
       const h1 = document.createElement('h1');
       h1.innerText = "TrybeTrip - Agência de Viagens";
+      h1.className = 'title';
       document.body.appendChild(h1);
 
       const main = document.createElement('main');
@@ -72,6 +73,7 @@
 
       const paragraph = document.createElement('p');
       paragraph.innerText = "Compre aqui sua passagem com 99% de desconto!!!"
+      paragraph.className = 'title';
       centerContentSection.appendChild(paragraph);
       
       const leftContentSection = document.createElement('section');
@@ -96,13 +98,19 @@
       }
       rightContentSection.appendChild(list);
 
-      function addTag(tag) {
-        const newTag = document.createElement(tag);
+      for (index = 0; index < 3; index += 1) {
+        const newTag = document.createElement('h3');
+        newTag.innerText = index;
+        newTag.className = "description";
         main.appendChild(newTag)
       }
-      for (index = 0; index < 3; index += 1) {
-        addTag('h3');
-      }
+
+      main.removeChild(leftContentSection);
+      rightContentSection.style.marginRight = 'auto';
+      main.style.backgroundColor = 'green';
+      list.children[9].remove();
+      list.lastChild.remove();
+
     </script>
   </body>
 </html>
