@@ -22,6 +22,12 @@
         const parent = document.getElementById('pai');
         const newSibling = document.createElement('section');
         parent.appendChild(newSibling);
+        newSibling.id = "novoIrmaoDosFilhos";
+
+        const newParent = document.getElementById('elementoOndeVoceEsta');
+        const newChild = document.createElement('section');
+        newChild.id = 'terceiroFilhoDoFilho';
+        newParent.appendChild(newChild);
 
     </script>
 </body>
