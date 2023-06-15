@@ -48,8 +48,8 @@ myWebpage.addEventListener('dblclick', newPage);
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo.
 
-function colorChange() {
-    myWebpage.style.color = 'red';  
+function colorChange(event) {
+    event.target.style.color = 'red';  
 }
 function oldColor() {
     myWebpage.style.color = '';  
