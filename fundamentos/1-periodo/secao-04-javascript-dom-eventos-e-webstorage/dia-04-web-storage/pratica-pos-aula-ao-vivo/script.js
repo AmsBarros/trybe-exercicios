@@ -88,9 +88,11 @@ window.onload = () => {
             setFontColor(chosenFontColor);
         }
 
-        let chosenFontSize = localStorage.getItem('fontSize');
-        if (chosenFontSize) {
-            setFontSize(chosenFontSize);
+        // let chosenFontSize = localStorage.getItem('fontSize');
+        // if (chosenFontSize) {
+        // É possível fazer sem armazenar em uma variável, mas fica maior e mais confuso.
+        if (localStorage.getItem('fontSize') !== 'null') {
+            setFontSize(localStorage.getItem('fontSize'));
         }
 
         let chosenLineHeight = localStorage.getItem('lineHeight');
