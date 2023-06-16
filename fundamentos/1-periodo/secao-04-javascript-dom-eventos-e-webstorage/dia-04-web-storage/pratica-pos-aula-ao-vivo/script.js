@@ -2,12 +2,14 @@ window.onload = () => {
     const setBackgroundColor = (color) => {
       let content = document.querySelector(".content")
       content.style.backgroundColor = color
+      localStorage.setItem('backgroundColor', color);
     }
   
     const setFontColor = (color) => {
       let paragraphs = document.querySelectorAll(".paragraph")
       for (let index = 0; index < paragraphs.length; index += 1) {
         paragraphs[index].style.color = color
+        localStorage.setItem('fontColor', color);
       }
     }
   
@@ -15,6 +17,7 @@ window.onload = () => {
       let paragraphs = document.querySelectorAll(".paragraph")
       for (let index = 0; index < paragraphs.length; index += 1) {
         paragraphs[index].style.fontSize = size
+        localStorage.setItem('fontSize', size);
       }
     }
   
@@ -22,6 +25,7 @@ window.onload = () => {
       let paragraphs = document.querySelectorAll(".paragraph")
       for (let index = 0; index < paragraphs.length; index += 1) {
         paragraphs[index].style.lineHeight = height
+        localStorage.setItem('lineHeight', height);
       }
     }
   
@@ -29,6 +33,7 @@ window.onload = () => {
       let paragraphs = document.querySelectorAll(".paragraph")
       for (let index = 0; index < paragraphs.length; index += 1) {
         paragraphs[index].style.fontFamily = family
+        localStorage.setItem('fontFamily', family);
       }
     }
   
@@ -71,4 +76,32 @@ window.onload = () => {
         setFontFamily(event.target.innerHTML)
       })
     }
+
+    function chosenItems() {
+        let chosenBackgroundColor = localStorage.getItem('backgroundColor');
+        if (chosenBackgroundColor) {
+            setBackgroundColor(chosenBackgroundColor);
+        }
+
+        let chosenFontColor = localStorage.getItem('fontColor');
+        if (chosenFontColor) {
+            setFontColor(chosenFontColor);
+        }
+
+        let chosenFontSize = localStorage.getItem('fontSize');
+        if (chosenFontSize) {
+            setFontSize(chosenFontSize);
+        }
+
+        let chosenLineHeight = localStorage.getItem('lineHeight');
+        if (chosenLineHeight) {
+            setLineHeight(chosenLineHeight);
+        }
+
+        let chosenFontFamily = localStorage.getItem('fontFamily');
+        if (chosenFontFamily) {
+            setFontFamily(chosenFontFamily);
+        }
+    }
+    chosenItems();
   }
