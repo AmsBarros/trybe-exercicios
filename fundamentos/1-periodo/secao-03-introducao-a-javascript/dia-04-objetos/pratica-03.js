@@ -29,8 +29,8 @@ const school = {
   function getIndex(obj, index) {
     return Object.values(obj)[index];
   }
-
-  console.log(getIndex(school, 0));
+  let teste = getIndex(school,0);
+  console.log(teste); 
 
   function sumStudents(object) {
     let sumStudents = 0;
