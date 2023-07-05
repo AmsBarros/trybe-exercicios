@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1688570234798" clover="3.2.0">
-  <project timestamp="1688570234799" name="All files">
+<coverage generated="1688577484766" clover="3.2.0">
+  <project timestamp="1688577484766" name="All files">
     <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="16" coveredelements="16" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
     <file name="createItem.js" path="/home/amanda/Documentos/TRYBE/trybe-exercicios/fundamentos/2-periodo/secao-06-ES6/dia-03-matchers/fixacao-testes/createItem.js">
       <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
