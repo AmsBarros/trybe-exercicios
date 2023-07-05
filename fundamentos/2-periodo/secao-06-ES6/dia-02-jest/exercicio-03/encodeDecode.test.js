@@ -39,7 +39,7 @@ describe('Funções encode e decode', () => {
       expect(decode('D4g')).toEqual('Dog');
     });
     it('converte apenas o número 5 na vogal u', () => {
-      expect(decode('5niversity')).toEqual('university'); // 2 requisito "Teste se as demais letras e os demais números não são convertidos para cada caso" Pq aqui funciona e em cima não?
+      expect(decode('5n3v2rsity')).toEqual('university'); // 2 requisito "Teste se as demais letras e os demais números não são convertidos para cada caso" Pq aqui funciona e em cima não?
     });
     it('checa se o retorno da função tem o mesmo número de caracteres', () => {
       expect(decode('string').length).toEqual(6);
