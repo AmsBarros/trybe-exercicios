@@ -3,13 +3,15 @@ import { actionCreator, clickCounter } from './redux/actions';
 import './App.css';
 
 type RootState = {
-  count: number;
-  clicks: number;
+  counterReducer: {
+    count: number;
+    clicks: number;
+  }
 };
 
 function App() {
-  const count = useSelector((state: RootState) => state.count);
-  const clicks = useSelector((state: RootState) => state.clicks);
+  const count = useSelector((state: RootState) => state.counterReducer.count);
+  const clicks = useSelector((state: RootState) => state.counterReducer.clicks);
   const dispatch = useDispatch();
 
   function handleClick(count = 1) {

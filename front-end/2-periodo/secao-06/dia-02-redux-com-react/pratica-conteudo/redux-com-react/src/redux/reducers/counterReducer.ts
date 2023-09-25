@@ -4,8 +4,8 @@ type ActionType = {
 };
 
 const INITIAL_STATE = {
-  clicks: 0,
-  count: 0,
+    clicks: 0,
+    count: 0,
 };
 
 function counterReducer(state = INITIAL_STATE, action: ActionType) {
